@@ -1,0 +1,121 @@
+body{
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    margin: 0 40px;
+    list-style-type: none;
+}
+
+ul li a .fa {
+    font-size: 40px;
+    color: #262626;
+    line-height: 80px;
+    padding-right: 14px;
+  }
+
+ul li a{
+    display: block;
+    width: 70px;
+    height: 80px;
+    background-color: #cecaca;
+    text-align: center;
+    padding-left: 20px;
+    transform: rotate(318deg)skew(199deg)translate(0,0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+} 
+
+ul li a::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #8a6f6f;
+    transform: 0.5;
+    transform: rotate(0deg)skewY(-45deg);
+}
+
+ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #8a6f6f;
+    transform: 0.5s;
+    transform: rotate(0deg)skewX(-45deg);
+}
+
+ul li a:hover{
+    transform: skew(5deg) translate(20px,-50px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+ul li:hover.fa{
+    color: #fff;
+}
+
+ul li:hover:nth-child(1) a{
+    background: #3e65b8;
+}
+
+ul li:hover:nth-child(1) a:before{
+    background: #254d9e;
+}
+
+ul li:hover:nth-child(1) a:after{
+    background-color: #4f7de0;
+}
+
+ul li:hover:nth-child(2) a{
+    background: #c96046;
+}
+
+ul li:hover:nth-child(2) a:before{
+    background: #964831;
+}
+
+ul li:hover:nth-child(2) a:after{
+    background-color: #dd6d41;
+}
+
+ul li:hover:nth-child(3) a{
+    background: #1c65a1;
+}
+
+ul li:hover:nth-child(3) a:before{
+    background: #3c63b1;
+}
+
+ul li:hover:nth-child(3) a:after{
+    background-color: #698cd6;
+}
+
+ul li:hover:nth-child(4) a{ 
+    background: #c42c66;
+}
+
+ul li:hover:nth-child(4) a:before{
+    background: #992b67;
+}
+
+ul li:hover:nth-child(4) a:after{
+    background-color: #c96da3;
+}
+
